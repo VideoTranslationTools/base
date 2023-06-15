@@ -20,3 +20,24 @@ const (
 	// Failed 任务状态：已失败，超过一定时间没有处理完毕则认为失败
 	Failed
 )
+
+func (s Status) ToString() string {
+	switch s {
+	case NoUploaded:
+		return "NoUploaded"
+	case NoAudited:
+		return "NoAudited"
+	case NotStart:
+		return "NotStart"
+	case Running:
+		return "Running"
+	case Finished:
+		return "Finished"
+	case Canceled:
+		return "Canceled"
+	case Failed:
+		return "Failed"
+	default:
+		return "Unknown"
+	}
+}

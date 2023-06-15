@@ -155,6 +155,7 @@ func (c *TaskSystemClient) GetTaskPackageStatus(taskPackageID string) (*api_hub.
 	return &reply, nil
 }
 
+// GetTranslatedResult 获取翻译结果
 func (c *TaskSystemClient) GetTranslatedResult(taskPackageID string) (*api_hub.GetTranslatedResultResp, error) {
 
 	getTaskPackageInfoReq := api_hub.GetTaskPackageInfoReq{
